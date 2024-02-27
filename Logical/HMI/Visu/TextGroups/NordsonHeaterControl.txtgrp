@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.7.5.60 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="NordsonHeaterControl">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="9"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="185087" Value="Heater Off"/>
+    <Text ID="185088" Value="Heater On"/>
+    <Text ID="185093" Value="Pump Off"/>
+    <Text ID="185094" Value="Pump On"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="185087" Value=""/>
+    <Text ID="185088" Value=""/>
+    <Text ID="185093" Value=""/>
+    <Text ID="185094" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="185087" Value="0"/>
+    <Index ID="185088" Value="1"/>
+    <Index ID="185093" Value="2"/>
+    <Index ID="185094" Value="3"/>
+  </IndexMap>
+</TextGroup>

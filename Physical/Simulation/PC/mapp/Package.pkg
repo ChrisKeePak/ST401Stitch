@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.9.65 SP?>
+<Package PackageType="mapp" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">RamCfg.mpaxisbasic</Object>
+    <Object Type="File">RcpCfg.mprecipexml</Object>
+    <Object Type="File">AlarmCfg.mpalarmxcore</Object>
+    <Object Type="File">AlrmHstCfg.mpalarmxhistory</Object>
+    <Object Type="File">BotLinMot.mpaxisbasic</Object>
+    <Object Type="File">TopLinMot.mpaxisbasic</Object>
+  </Objects>
+</Package>

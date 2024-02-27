@@ -1,0 +1,20 @@
+VAR
+	IOAlarmText : STRING[100];
+	MpAlarmXCore_0 : MpAlarmXCore;
+	MpAlarmXListUI_0 : MpAlarmXListUI;
+	AlarmUISetup : MpAlarmXListUISetupType;
+	AlarmUIConnect : MpAlarmXListUIConnectType;
+	AlarmListAdapter : AlarmListAdapter_typ;
+	AlarmHistoryListAdapter : AlarmListAdapter_typ;
+	status : BOOL;
+	i : UINT;
+	MpAlarmXHistory_0 : MpAlarmXHistory;
+	MpAlarmXHistoryUI_0 : MpAlarmXHistoryUI;
+	AlarmXHistoryUIConnect : MpAlarmXHistoryUIConnectType;
+	AlarmXHistoryUISetup : MpAlarmXHistoryUISetupType;
+	AlarmStatus : DINT;
+	TestAlarm2 : BOOL;
+	TestAlarm : BOOL;
+	TestAlarm2Active : BOOL;
+	TestAlarmActive : BOOL;
+END_VAR

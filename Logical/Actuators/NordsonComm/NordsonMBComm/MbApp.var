@@ -1,0 +1,30 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: MbApp
+ * File: MbApp.var
+ * Author: Bernecker + Rainer
+ * Created: October 22, 2009
+ ********************************************************************
+ * Local variables of program MbApp
+ ********************************************************************)
+VAR
+	state : ModbusTCP_Handling_States_enum;
+	mb_station : STRING[50];
+	write_register_address : UINT;
+	num_registers_to_write : UINT;
+	read_register_address : UINT;
+	num_registers_to_read : UINT;
+	ReadMultipleRegisters : mbReadHoldingRegisters;
+	WriteMultipleRegisters : mbWriteMultipleRegisters;
+	MBError : UINT;
+	testIdx : USINT;
+	NordsonRxPacket : NordsonRxPacket_typ;
+	testChannel : USINT;
+	NordsonTxPacket : NordsonTxPacket_typ;
+	FeedbackCycleTimer : TON;
+	MelterCmd : USINT;
+	TempChannelToWrite : USINT;
+	StandbyTimer : TON;
+	FirstTimeCopySetTemps : BOOL;
+END_VAR

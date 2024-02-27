@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.7.5.60 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="FolderStyle">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="7"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="182700" Value="Pneumatic"/>
+    <Text ID="182701" Value="Linear Motor"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="182700" Value=""/>
+    <Text ID="182701" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="182700" Value="0"/>
+    <Index ID="182701" Value="1"/>
+  </IndexMap>
+</TextGroup>

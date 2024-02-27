@@ -1,0 +1,14 @@
+VAR
+	ModbusRead : mbReadHoldingRegisters;
+	ModbusWrite : mbWriteMultipleRegisters;
+	Station : STRING[10];
+	Registers : Register_typ;
+	Channel : Channel_typ;
+	PressureSetpoint : REAL;
+	Tank : Tank_typ;
+	ExtendedCommsState : ExtendedComms_enum;
+	WriteFlag : BOOL;
+	ReadErrorNumber : UINT;
+	WriteErrorNumber : UINT;
+	New_Variable : USINT;
+END_VAR

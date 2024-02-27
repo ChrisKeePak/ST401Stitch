@@ -1,0 +1,15 @@
+VAR
+	status : UDINT;
+	GlueChannel1 : BOOL;
+	GlueChannel2 : BOOL;
+	GlueChannel3 : BOOL;
+	GlueChannel4 : BOOL;
+	AdhesiveUnitReadyAlarmActive : BOOL;
+	AdhesiveUnitFaultedAlarmActive : BOOL;
+	AdhesiveUnitUseageLowAlarmActive : BOOL;
+	AdhesiveUnitLevelLowAlarmActive : BOOL;
+	Switches0 : ARRAY[0..MAX_NUM_ONOFF_PATTERNS_M1] OF Switches;
+	Switches1 : ARRAY[0..MAX_NUM_ONOFF_PATTERNS_M1] OF Switches;
+	Switches2 : ARRAY[0..MAX_NUM_ONOFF_PATTERNS_M1] OF Switches;
+	Switches3 : ARRAY[0..MAX_NUM_ONOFF_PATTERNS_M1] OF Switches;
+END_VAR

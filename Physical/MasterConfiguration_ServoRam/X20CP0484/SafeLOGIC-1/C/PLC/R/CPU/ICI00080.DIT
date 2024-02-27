@@ -1,0 +1,70 @@
+(*
+T: PROGRAM Main
+FW: NO
+CI#: 80
+QSL: 10
+QVE: 10
+QVPC: 10
+QPar: 0
+QFBI: 6
+*)
+@V 1 2 0
+CabinetEstopOK	1	VAR	@TYP:43
+		     
+
+;
+
+@V 1 3 0
+CabinetEStop	2	VAR	@FB:81
+		     
+
+;
+
+@V 1 4 0
+ReleaseTimer	3	VAR	@FB:44
+		     
+
+;
+
+@V 1 5 0
+STO_Delay	4	VAR	@FB:43
+		     
+
+;
+
+@V 1 6 0
+BackEStop	5	VAR	@FB:81
+		     
+
+;
+
+@V 1 7 0
+GuardDoorMonitoring	6	VAR	@FB:82
+		     
+
+;
+
+@V 1 8 0
+BackEstopOk	7	VAR	@TYP:43
+		     
+
+;
+
+@V 1 9 0
+GuardDoorsOk	8	VAR	@TYP:43
+		     
+
+;
+
+@V 1 10 0
+SafetyProgramRunningDelay	9	VAR	@FB:21
+		     
+
+;
+
+@V 2 18 0
+__Code@0	10	VAR	@TYP:43
+		     
+
+;
+

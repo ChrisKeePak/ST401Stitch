@@ -1,0 +1,232 @@
+(*
+T: FUNCTION_BLOCK SF_GuardMonitoring_V1_00
+FW: YES	NO_VARIANT SF_GuardMonitoring_V1_00 SKIP_NOTHING	
+CI#: 82
+QSL: 0
+QVE: 37
+QVPC: 37
+QPar: 11
+QFBI: 3
+*)
+
+Internal_S_GuardSwitch1	1	VAR	@TYP:1
+		     
+
+;
+
+
+Internal_S_GuradSwitch2	2	VAR	@TYP:1
+		     
+
+;
+
+
+Internal_S_StartReset	3	VAR	@TYP:1
+		     
+
+;
+
+
+Internal_S_AutoReset	4	VAR	@TYP:1
+		     
+
+;
+
+
+InternalState	5	VAR	@TYP:18
+		     
+
+;
+
+
+InternalState1	6	VAR	@TYP:18
+		     
+
+;
+
+
+Q_R_TRIG_Reset	7	VAR	@TYP:1
+		     
+
+;
+
+
+Q_TON_State_8004	8	VAR	@TYP:1
+		     
+
+;
+
+
+Q_TON_State_8014	9	VAR	@TYP:1
+		     
+
+;
+
+
+InternalState8004Active	10	VAR	@TYP:1
+		     
+
+;
+
+
+InternalState8014Active	11	VAR	@TYP:1
+		     
+
+;
+
+
+R_TRIG_Reset	12	VAR	@FB:16
+		     
+
+;
+
+
+TON_State_8004	13	VAR	@FB:21
+		     
+
+;
+
+
+TON_State_8014	14	VAR	@FB:21
+		     
+
+;
+
+
+Activate	15	VAR_INPUT	@TYP:1
+		     
+
+;
+
+
+S_GuardSwitch1	16	VAR_INPUT	@TYP:43
+		     
+
+;
+PFW: VAR
+
+S_GuardSwitch2	17	VAR_INPUT	@TYP:43
+		     
+
+;
+PFW: VAR
+
+DiscrepancyTime	18	VAR_INPUT	@TYP:12
+		     
+
+;
+PFW: CONST
+
+S_StartReset	19	VAR_INPUT	@TYP:43
+		     
+
+;
+
+
+S_AutoReset	20	VAR_INPUT	@TYP:43
+		     
+
+;
+
+
+Reset	21	VAR_INPUT	@TYP:1
+		     
+
+;
+PFW: VAR
+
+Ready	22	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+S_GuardMonitoring	23	VAR_OUTPUT	@TYP:43
+		     
+
+;
+
+
+Error	24	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+DiagCode	25	VAR_OUTPUT	@TYP:18
+		     
+
+;
+PFW: DIA
+
+__Code@0	26	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@1	27	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@2	28	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@3	29	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@4	30	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@5	31	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@6	32	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@7	33	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@8	34	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@9	35	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@10	36	VAR	@TYP:1
+		     
+
+;
+
+
+__Code@11	37	VAR	@TYP:1
+		     
+
+;
+

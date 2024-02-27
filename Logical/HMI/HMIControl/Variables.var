@@ -1,0 +1,10 @@
+VAR
+	FlashOFF : TON;
+	FlashON : TON;
+	status : BOOL;
+	SettingsLoaded : BOOL;
+	LogoutTimer : TON;
+	OldPage : USINT;
+	ResetTimeoutTimer : BOOL;
+	ResetUserLevel : BOOL;
+END_VAR

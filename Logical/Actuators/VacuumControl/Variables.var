@@ -1,0 +1,10 @@
+VAR
+	status : UDINT;
+	TON_BlowOff : TON; (*Timer for blow off after vacuum is shut off (user defined time)*)
+END_VAR
+VAR CONSTANT
+	STANDSTILL_TIMOUT_THRESH : TIME := T#15s;
+END_VAR
+VAR
+	TON_VenturiStandstill : TON;
+END_VAR

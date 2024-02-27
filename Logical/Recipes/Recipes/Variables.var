@@ -1,0 +1,17 @@
+VAR
+	LastRecipeLoaded : STRING[80];
+	MpRecipeXml_0 : MpRecipeXml;
+	MpRecipeRegPar_0 : MpRecipeRegPar;
+	MpRecipeRegPar_1 : MpRecipeRegPar;
+	MpRecipeRegPar_2 : MpRecipeRegPar;
+	MpRecipeRegPar_3 : MpRecipeRegPar;
+	MpRecipeRegPar_4 : MpRecipeRegPar;
+	MpRecipeRegPar_5 : MpRecipeRegPar;
+	RegParActive0 : BOOL;
+	RegParActive1 : BOOL;
+	RegParActive2 : BOOL;
+	RegParActive3 : BOOL;
+	RegParActive4 : BOOL;
+	RegParActive5 : BOOL;
+	AllParsRegistered : BOOL;
+END_VAR

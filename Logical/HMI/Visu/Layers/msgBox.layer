@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.7.5.60 SP"?>
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="msgBox">
+  <Property Name="BackColor" Value="241"/>
+  <Property Name="Description" Value="Message Box"/>
+  <Property Name="Height" Value="600"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.gHMI.StatusDatapoints.RecipeDialogSDP]"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="1024"/>
+  <TextGroup>
+    <TextLayer LanguageId="en">
+      <Text ID="186451" Value="Yes"/>
+      <Text ID="186453" Value="Cancel"/>
+      <Text ID="186455" Value="Are you sure you want to change the box type?"/>
+    </TextLayer>
+    <TextLayer LanguageId="de">
+      <Text ID="186451" Value=""/>
+      <Text ID="186453" Value=""/>
+      <Text ID="186455" Value=""/>
+    </TextLayer>
+    <IndexMap>
+      <Index ID="186451" Value="7"/>
+      <Index ID="186453" Value="9"/>
+      <Index ID="186455" Value="1"/>
+    </IndexMap>
+  </TextGroup>
+  <Controls>
+    <Control ClassId="0x00001005" Name="bmpTransparentBackground">
+      <Property Name="Bitmap" Value="Source[local].Bitmap[BackTransparent]"/>
+      <Property Name="BitmapSource" Value="SingleBitmap"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Height" Value="600"/>
+      <Property Name="IndexDatapoint" Value="None"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="SimulationValue" Value="0"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="Width" Value="1024"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtHeader">
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="386"/>
+      <Property Name="Left" Value="230"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Help]"/>
+      <Property Name="TextDatapoint" Value="None"/>
+      <Property Name="TextSource" Value="SingleString"/>
+      <Property Name="Top" Value="67"/>
+      <Property Name="Width" Value="516"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="txtContent">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Calibri24]"/>
+      <Property Name="Height" Value="116"/>
+      <Property Name="Left" Value="259"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="SimulationIndex" Value="0"/>
+      <Property Name="SimulationValue" Value="Are you sure you want to change the box type?"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndexOffset" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="175"/>
+      <Property Name="Width" Value="459"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_13">
+      <Property Name="BackColor" Value="7"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapAlignmentVertical" Value="Bottom"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_79]"/>
+      <Property Name="Font" Value="Source[local].Font[Calibri24]"/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="65"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="259"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBackColor" Value="247"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Flat_black]"/>
+      <Property Name="PressedForeColor" Value="0"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="7"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="350"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[ConfirmBoxType]"/>
+      <Property Name="Width" Value="190"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="Button_14">
+      <Property Name="BackColor" Value="7"/>
+      <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapAlignmentVertical" Value="Bottom"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_81]"/>
+      <Property Name="Font" Value="Source[local].Font[Calibri24]"/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="65"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="530"/>
+      <Property Name="Multiline" Value="Automatic"/>
+      <Property Name="PressedBackColor" Value="247"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Flat_black]"/>
+      <Property Name="PressedForeColor" Value="0"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]"/>
+      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+      <Property Name="TextIndex" Value="9"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="350"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[CancelBoxChange]"/>
+      <Property Name="Width" Value="190"/>
+    </Control>
+  </Controls>
+  <KeyMapping/>
+</Layer>

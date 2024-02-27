@@ -1,0 +1,5 @@
+CabinetEStop,POE\Main\Code.GB,0,,12,55,,,,,,VAR,FB,,
+CabinetEstopOK,POE\Main\Code.GB,1,IN,15,47,Read,,SAFEBOOL,,,VAR,LOCAL,,
+CabinetEstopOK,POE\Main\Code.GB,1,OUT,14,0,Write,,SAFEBOOL,,,VAR,LOCAL,,
+ReleaseTimer,POE\Main\Code.GB,0,,20,14,,,,,,VAR,FB,,
+STO_Delay,POE\Main\Code.GB,0,,34,17,,,,,,VAR,FB,,

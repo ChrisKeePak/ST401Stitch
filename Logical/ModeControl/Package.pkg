@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.3.93 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC" Description="Copy right:KeePak, B&amp;R  Authors: Nathan Stephens, Jeremy Lee, Cody Jung   Rev:1.0   Date:9-28-17">ModeControl</Object>
+    <Object Type="Program" Language="IEC" Description="Copy right:KeePak, B&amp;R  Authors: Nathan Stephens, Jeremy Lee, Cody Jung   Rev:1.0   Date:9-28-17">ModeControl_ST</Object>
+  </Objects>
+</Package>

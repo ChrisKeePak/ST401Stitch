@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalHardware>
+  <Modules>
+    <Module ModuleID="FBE.NUMATICS-580-20150428-145500" Version="1.0" OrderNumber="Numatics 580">
+      <SourceFile OriginalFile="NUMATICS-580-20150428-145500.xdd" TranslationFile="01C6T22B.ext" />
+    </Module>
+  </Modules>
+</ExternalHardware>

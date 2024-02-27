@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.7.2.98"?>
+<ProjectSettings xmlns="http://br-automation.co.at/AS/ProjectSettings">
+  <ConfigurationManager ActiveConfigurationName="MasterConfiguration_ServoRam" />
+  <Deployment Value="ActiveCpu" />
+  <ExportProject ExportFilePath="C:\Users\Chris Battles\OneDrive\Desktop\ST401Stitch.zip" />
+  <Print Footer="%cPage: %p" Header="%lProject: %n%c%x" />
+</ProjectSettings>

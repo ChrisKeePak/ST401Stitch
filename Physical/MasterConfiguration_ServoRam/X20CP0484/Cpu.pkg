@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.5.60 SP?>
+<Cpu xmlns="http://br-automation.co.at/AS/Cpu">
+  <Objects>
+    <Object Type="File" Description="Software configuration">Cpu.sw</Object>
+    <Object Type="File" Description="Permanent variables">Cpu.per</Object>
+    <Object Type="File" Description="I/O mapping">IoMap.iom</Object>
+    <Object Type="File" Description="Variable mapping">PvMap.vvm</Object>
+    <Object Type="Package">mapp</Object>
+    <Object Type="Package">mappView</Object>
+    <Object Type="Package">Connectivity</Object>
+    <Object Type="Package">TextSystem</Object>
+    <Object Type="Package">AccessAndSecurity</Object>
+    <Object Type="Package">VC</Object>
+    <Object Type="Package">Motion</Object>
+    <Object Type="Package">ExternalHardware</Object>
+    <Object Type="File" Description="SafeDESIGNER project">SafeLOGIC-1.swt</Object>
+  </Objects>
+  <Configuration HasNcOperatingSystem="true" LocalVariablesMemory="MemoryPool" ModuleId="X20CP0484">
+    <AutomationRuntime Version="C4.72" />
+    <Build GccVersion="4.1.2" GeneratePPCode="false" />
+    <DefaultTargetMemory DataObjects="UserROM" Libraries="UserROM" Tasks="UserROM" />
+    <Io ArConfigDataModule="false" ArConfigDataModulePath="$(AS_CPU_PATH)\AS\CfgData.br" DisabledHardware="false" IoMapDataModule="false" IoMapDataModulePath="$(AS_CPU_PATH)\AS\IomData.br" ManualIoOffsets="false" Supervision="true" />
+    <Opc EncryptOpcs="false" UseShortNames="false" WindowsServer="true" />
+    <Safety SafetyRelease="1.10" />
+    <Simulation StartAR000="true" TerminateAR000="true" />
+    <TaskClasses DefaultIoTaskClass="Automatic" DefaultTaskClass="Cyclic4" />
+    <Transfer AddToUserPart="False" AdditionalUserDir="" AllowInitialTransfer="False" AllowPartitioning="False" AllowWarmRestart="true" DownloadMode="Copy" ExecuteInitExitProgram="True" ForceInitialTransfer="False" GeneratePviTransferList="true" IdentificationTypeValue="" IgnoreBrDependencies="false" IgnoreTargetOnlyObjects="false" IgnoreVersion="True" KeepNonVolatileMemory="False" ModuleSystemForPip="" PackedArConfig="false" PackedIoMap="false" PreserveVariableValues="True" ProjectConsistent="False" PromptBeforeProject="false" PromptBeforeTask="false" RebootDuringTransfer="True" TargetIdentificationType="Always" TransferInServiceMode="false" TransferOnlyRelevantChanges="false" TryToBootInRunMode="False" UserFilesIgnoreDifference="False" />
+    <Vc FirmwareVersion="V4.72.0" />
+    <TechnologyPackages>
+      <SafetyRelease Version="1.10.0" />
+    </TechnologyPackages>
+    <OnlineConfiguration Name="X20CP0484" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.0.100 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
+  </Configuration>
+</Cpu>

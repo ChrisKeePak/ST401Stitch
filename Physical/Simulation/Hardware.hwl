@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <Modules>
+    <Module Name="PC" Type="PC_any" X="100" Y="100" />
+    <Module Name="5LS189.6-1" Type="5LS189.6-1" X="418" Y="110" />
+    <Module Name="8V1010.001-2" Type="8V1010.001-2" X="861" Y="100" />
+    <Module Name="8AC120.60-1" Type="8AC120.60-1" X="875" Y="215.5" />
+    <Module Name="8AC114.60-2" Type="8AC114.60-2" X="863.8" Y="215.5" />
+    <Module Name="80VD100PD.C188-01" Type="80VD100PD.C188-01" X="513" Y="100" />
+    <Module Name="MotorSynchronous_any" Type="MotorSynchronous_any" X="478" Y="332" />
+    <Module Name="MotorSynchronous_any1" Type="MotorSynchronous_any" X="561" Y="332" />
+  </Modules>
+  <Links>
+    <Link From="5LS189.6-1" To="80VD100PD.C188-01" FromPort="IF2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="459" Y="130" />
+      <Point X="459" Y="130" />
+      <Point X="464" Y="130" />
+      <Point X="475" Y="130" />
+      <Point X="475" Y="95" />
+      <Point X="585" Y="95" />
+      <Point X="585" Y="159" />
+      <Point X="571" Y="159" />
+      <Point X="552" Y="159" />
+      <Point X="552" Y="174" />
+    </Link>
+    <Link From="80VD100PD.C188-01" To="8AC114.60-2" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="562" Y="174" />
+      <Point X="562" Y="174" />
+      <Point X="571" Y="174" />
+      <Point X="585" Y="174" />
+      <Point X="585" Y="243.3" />
+      <Point X="860.899963" Y="243.3" />
+      <Point X="869.899963" Y="243.3" />
+      <Point X="869.899963" Y="243.3" />
+    </Link>
+    <Link From="80VD100PD.C188-01" To="MotorSynchronous_any" FromPort="EC1" ToPort="EC" IsRoutedByUser="False">
+      <Point X="521" Y="153" />
+      <Point X="521" Y="153" />
+      <Point X="512" Y="153" />
+      <Point X="485.5" Y="153" />
+      <Point X="485.5" Y="259" />
+      <Point X="499.5" Y="259" />
+      <Point X="499.5" Y="331.1" />
+      <Point X="499.5" Y="338.1" />
+      <Point X="499.5" Y="338.1" />
+    </Link>
+    <Link From="80VD100PD.C188-01" To="MotorSynchronous_any1" FromPort="EC2" ToPort="EC" IsRoutedByUser="False">
+      <Point X="535" Y="153" />
+      <Point X="535" Y="168" />
+      <Point X="512" Y="168" />
+      <Point X="505" Y="168" />
+      <Point X="505" Y="252" />
+      <Point X="582.5" Y="252" />
+      <Point X="582.5" Y="331.1" />
+      <Point X="582.5" Y="338.1" />
+      <Point X="582.5" Y="338.1" />
+    </Link>
+    <Link From="80VD100PD.C188-01" To="MotorSynchronous_any" FromPort="MT1" ToPort="MT" IsRoutedByUser="False">
+      <Point X="532" Y="224" />
+      <Point X="532" Y="224" />
+      <Point X="532" Y="235" />
+      <Point X="532" Y="245" />
+      <Point X="527.5" Y="245" />
+      <Point X="527.5" Y="331.1" />
+      <Point X="527.5" Y="338.1" />
+      <Point X="527.5" Y="338.1" />
+    </Link>
+    <Link From="80VD100PD.C188-01" To="MotorSynchronous_any1" FromPort="MT2" ToPort="MT" IsRoutedByUser="False">
+      <Point X="557" Y="224" />
+      <Point X="557" Y="224" />
+      <Point X="557" Y="235" />
+      <Point X="557" Y="259" />
+      <Point X="610.5" Y="259" />
+      <Point X="610.5" Y="331.1" />
+      <Point X="610.5" Y="338.1" />
+      <Point X="610.5" Y="338.1" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

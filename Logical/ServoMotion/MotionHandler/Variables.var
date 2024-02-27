@@ -1,0 +1,8 @@
+VAR
+	ServoFeedHandler : AxisHandler;
+	ServoHopperHandler : AxisHandler;
+	ServoRamHandler : AxisHandler;
+	OldTorqueLimitHopper : REAL;
+	OldTorqueLimitFeed : REAL;
+	OldTorqueLimitRam : REAL;
+END_VAR

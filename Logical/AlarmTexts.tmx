@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">AlarmTexts</prop>
+  </header>
+  <body>
+    <tu tuid="VacuumPressureLow">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>WARNING! Vacuum Pressure Too Low! Check Pump &amp; Clean Filter!</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="VacuumOverTemp">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Vacuum Over Temp</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AdhesiveUnitNotReady">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Glue System is heating up and not ready</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AdhesiveUnitFault">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Heater or RTD failure. Contact KEE-PAK</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AdhesiveUnitLevelLow">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Adhesive Level Low. Check the adhesive level and feeder</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AdhesiveUseageLow">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Adhesive Useage Low</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AirPressureLow">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Air Pressure Low</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SafetyNotOK">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Safety Not OK</seg>
+      </tuv>
+    </tu>
+    <tu tuid="VFDAlarm">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{&amp;VFDAlarmText}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="VFDOverCurrent">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>VFD Over Current / Jam</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IOModuleNotOK">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{&amp;IOAlarmText}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="VenturiLow">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Vacuum too low during process</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NordsonComms">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Error in Communication to Nordson Melter</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SafetyBackEStop">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Back Estop is pressed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SafetyFrontEStop">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Front Estop is pressed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SafetyGuardDoor">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>One or more Guard Door switches are open</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PatLiteComms">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Error in Communication to Patlite Lightstack</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AxisNotHomed">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Top or bottom folder needs to be homed.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ATSUnderLimit">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>ATS Under Limit</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ATSOverLimit">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>ATS Over Limit</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AdhesiveNordsonInStandby">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Glue System In Standby</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PhotoEyeCheck">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Pick and Place Did Not Feed Box Past Glue Photoeyes - Check For Jam</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HopperLow">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Hopper Low - Fill Hopper</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BodyPanelCheck">
+      <tuv xml:lang="de">
+        <seg>placeholder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Body Panel Not Detected. Check For Jam</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

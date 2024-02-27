@@ -1,0 +1,99 @@
+VAR
+	TON_RamDelay : TON; (*Timer for the Ram to delay forward motion*)
+	StopFeed : BOOL;
+END_VAR
+VAR RETAIN
+	ServoRam_EPD : MC_ENDLESS_POSITION;
+END_VAR
+VAR
+	ServoRamTrigger : BOOL;
+END_VAR
+VAR RETAIN
+	ServoRamFirstHomeExecuted : BOOL;
+END_VAR
+VAR
+	ServoRamClear : BOOL;
+	ServoRamBusy : BOOL;
+	ServoRamAutoHome : BOOL;
+END_VAR
+VAR RETAIN
+	ServoHopper_EPD : MC_ENDLESS_POSITION;
+	ServoHopperFirstHomeExecuted : BOOL;
+	ServoFeed_EPD : MC_ENDLESS_POSITION;
+	ServoFeedFirstHomeExecuted : BOOL;
+END_VAR
+VAR
+	RamDelay : TIME;
+	PhotoEyeSeen : BOOL;
+	Melter : DUT_NDSN_Flex;
+	LubricationOK : BOOL;
+END_VAR
+VAR RETAIN
+	LubeCount : UDINT;
+END_VAR
+VAR
+	InfeedBoxPresent : BOOL;
+	HopperLowTime : TIME := T#7s;
+	HoperLowStop : BOOL;
+	gVacCtrlInterface : VacCtrlInterface_typ;
+	gUserLevel : USINT;
+	gTopLinAxis_1 : ACP10AXIS_typ;
+	gTopLinAxis : ACP10AXIS_typ;
+	gSoftwareReset : BOOL;
+	gServoRamInterface : Axis_Interface_typ;
+	gServoRam : ACP10AXIS_typ;
+	gServoHopperInterface : Axis_Interface_typ;
+	gServoHopper : ACP10AXIS_typ;
+	gServoFeedInterface : Axis_Interface_typ;
+	gServoFeed : ACP10AXIS_typ;
+	gSafetyNotOKAlarmActive : BOOL;
+END_VAR
+VAR RETAIN
+	gRecipeInterface : {REDUND_UNREPLICABLE} RecipeCtrlInterface_typ := (0);
+END_VAR
+VAR
+	gRamCtrlInterface : RamControlInterface_typ;
+	gRamAtStopPosition : BOOL;
+	gPusherOn : BOOL;
+	gPassword : ARRAY[0..2] OF STRING[80] := ['','1111','2147'];
+	gOnDelayCompensation : REAL;
+	gOffDelayCompensation : REAL;
+	gNumAlarms : UDINT;
+	gNumActiveAlarms : UDINT;
+	gModeControlInterface : ModeCtrlInterface_typ;
+	gLowSeverityAlarmActive : BOOL;
+	gIsSimulated : BOOL;
+	gIO : IO_typ;
+	gHomingParameters : Home_Parameters_typ;
+	gHMI : HMIControl_typ;
+	gHighSeverityAlarmActive : BOOL;
+	gFoldPushCtrlInterface : FoldPushCtrlInterface_typ := (Parameters:=(LinMotBotFolder:=(Parameter:=(MpBasicParameters:=(Home:=(Mode:=mpAXIS_HOME_MODE_RESTORE_POS,Position:=0,StartVelocity:=25,HomingVelocity:=5,Acceleration:=500,StartDirection:=mpAXIS_HOME_DIR_NEGATIVE,TorqueLimit:=0.5,BlockDetectionPositionError:=4,PositionErrorStopLimit:=10),Jog:=(Velocity:=2)))),LinMotTopFolder:=(Parameter:=(MpBasicParameters:=(Home:=(Mode:=mpAXIS_HOME_MODE_RESTORE_POS,Position:=0,StartVelocity:=25,HomingVelocity:=5,Acceleration:=500,StartDirection:=mpAXIS_HOME_DIR_NEGATIVE,TorqueLimit:=0.5,BlockDetectionPositionError:=4,PositionErrorStopLimit:=10),Jog:=(Velocity:=2))))));
+END_VAR
+VAR RETAIN
+	gEndlessPosTop : MC_ENDLESS_POSITION;
+	gEndlessPosBot : MC_ENDLESS_POSITION;
+END_VAR
+VAR
+	gDownstreamBlocked : BOOL;
+	gCurrentLimitHit : BOOL;
+	gChangePage : USINT;
+	gBotLinAxis_1 : ACP10AXIS_typ;
+	gBotLinAxis : ACP10AXIS_typ;
+	gAutoTune : BOOL;
+	gAlarmSystemActive : BOOL;
+	gAlarmActive : BOOL;
+	gAirPressureAlarmActive : BOOL;
+	gAdhesiveCtrlInterface : AdhesiveCtrlInterface_typ;
+	gActivePage : USINT;
+	FeedServoBusy : BOOL;
+	FeedPositionCapture : LREAL;
+	FeedPosFinal : LREAL;
+	FeedInCycle : BOOL;
+	DistanceAfterLatch : REAL;
+END_VAR
+VAR RETAIN
+	CycleCount : UDINT;
+END_VAR
+VAR
+	b_ModuleStatus : BOOL;
+END_VAR

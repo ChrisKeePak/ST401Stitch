@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.2.98?>
+<NcMapping NcSwId="Acp10" DisabledNodesAreHidden="False">
+  <NcObject Name="8EI2X2HWT10.xxxx-1_ncV_AXIS1" ModuleId="8EI2X2HWT10.xxxx-1" Type="ncV_AXIS" Channel="1" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gServoFeed" ModuleId="8EI2X2HWT10.xxxx-1" Type="ncAXIS" Channel="1" AcoposSimulation="Off" InitParameter="gFeedi" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="8EI2X2HWT10.xxxx-1_ncV_AXIS2" ModuleId="8EI2X2HWT10.xxxx-1" Type="ncV_AXIS" Channel="2" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gServoRam" ModuleId="8EI2X2HWT10.xxxx-1" Type="ncAXIS" Channel="2" AcoposSimulation="Off" InitParameter="gFeedi" Disabled="FALSE" ModuleDisabled="FALSE" />
+  <NcObject Name="8EI2X2HWT10.xxxx-1_ncV_AXIS3" ModuleId="8EI2X2HWT10.xxxx-1" Type="ncV_AXIS" Channel="3" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="gServoHopper" ModuleId="8EI2X2HWT10.xxxx-1" Type="ncAXIS" Channel="3" AcoposSimulation="Off" InitParameter="gFeedi" AcoposParameter="gHopa" Disabled="FALSE" ModuleDisabled="FALSE" />
+</NcMapping>

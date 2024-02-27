@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.6.4.67 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="IEC">ServoRamHandler</Object>
+    <Object Type="Program" Language="IEC">ServoFeedHandler</Object>
+    <Object Type="Program" Language="IEC">ServoHopperHandler</Object>
+    <Object Type="DataObject" Language="Ett">acp10etxen</Object>
+    <Object Type="Program" Language="IEC">MappCalls</Object>
+    <Object Type="Program" Language="ANSIC">MotionHandler</Object>
+  </Objects>
+</Package>

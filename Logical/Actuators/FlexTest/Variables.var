@@ -1,0 +1,5 @@
+VAR
+	FB_NDSN_MB_PBFlex_Proc : FB_NDSN_MB_PBFlex_Process;
+	FB_NDSN_MB_PBFlex_Ctrl : FB_NDSN_MB_PBFlex_CtrlSts;
+	mb_Station : STRING[30];
+END_VAR

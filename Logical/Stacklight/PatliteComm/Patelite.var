@@ -1,0 +1,32 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: MbApp
+ * File: MbApp.var
+ * Author: Bernecker + Rainer
+ * Created: October 22, 2009
+ ********************************************************************
+ * Local variables of program MbApp
+ ********************************************************************)
+VAR CONSTANT
+	GROUP_OFFSET : UINT := 257;
+END_VAR
+VAR
+	CommState : CommStateEnum;
+	NextLightGroup : GroupEnum;
+	CurrentLightGroup : GroupEnum;
+	mbWriteSingleRegister_0 : mbWriteSingleRegister; (*function block structure*)
+END_VAR
+VAR CONSTANT
+	GROUP_REG_ADR : UINT := 6; (*register address for light group on modbus station*)
+END_VAR
+VAR
+	mb_station : STRING[20]; (*path to modbus station*)
+	ErrorCount : UINT;
+END_VAR
+VAR CONSTANT
+	ERROR_COUNT_THRESH : UINT := 10;
+END_VAR
+VAR
+	CommError : BOOL;
+END_VAR

@@ -1,0 +1,38 @@
+﻿{GroupDefinition(0,'NewGroup')}
+
+VAR_GLOBAL {Group(0)}
+    {LINE(1)}
+    safetyReset AT %IX0.0 : BOOL {Custom('SL1.SM1.BOOL101')};
+    {LINE(2)}
+    CabinetEstopDiag AT %QW2 : WORD {Custom('SL1.SM1.UINT001')};
+    {LINE(3)}
+    SafetyOK AT %QX0.0 : BOOL {Custom('SL1.SM1.BOOL001')};
+    {LINE(4)}
+    SafetyRunning AT %QX0.1 : BOOL {Custom('SL1.SM1.BOOL002')};
+    {LINE(5)}
+    GuardDoorsStatus AT %QX0.2 : BOOL {Custom('SL1.SM1.BOOL003')};
+    {LINE(6)}
+    CabinetEstopStatus AT %QX0.3 : BOOL {Custom('SL1.SM1.BOOL004')};
+    {LINE(7)}
+    BackEstopStatus AT %QX0.4 : BOOL {Custom('SL1.SM1.BOOL005')};
+    {LINE(8)}
+    GuardDoorsDiag AT %QW6 : WORD {Custom('SL1.SM1.UINT003')};
+    {LINE(9)}
+    BackEstopDiag AT %QW4 : WORD {Custom('SL1.SM1.UINT002')};
+    {LINE(10)}
+    FrontEstopInput AT %IX17.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0102')};
+    {LINE(11)}
+    BackEstopInput AT %IX17.1 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0304')};
+    {LINE(12)}
+    GuardDoorInput AT %IX17.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeTwoChannelInput0506')};
+    {LINE(13)}
+    VFD_STO AT %QX12.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalOutput01')};
+    {LINE(14)}
+    VFD_STO2 AT %QX12.2 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.SafeDigitalOutput03')};
+    {LINE(15)}
+    Release_VFD_STO AT %QX10.0 : BOOL {Custom('SL1.SM1.ReleaseOutput01')};
+    {LINE(16)}
+    Release_VFD_STO2 AT %QX10.2 : BOOL {Custom('SL1.SM1.ReleaseOutput03')};
+    {LINE(17)}
+    ExternalMachineOption000 AT %IX60.0 : SAFEBOOL {SafeAdr(true),Custom('SL1.SM1.ExternalMachineOption000')};
+END_VAR

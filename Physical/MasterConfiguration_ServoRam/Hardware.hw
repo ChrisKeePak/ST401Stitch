@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.5.60?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="0AC808.9" Type="0AC808.9" Version="1.0.0.0">
+    <Connection Connector="ETH1" TargetModule="6PPT30.101G-20B" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="NordsonMelter" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Connection Connector="ETH3" TargetModule="PatLite_LightStack" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+  </Module>
+  <Module Name="6PPT30.101G-20B" Type="6PPT30.101G-20B" Version="1.2.0.0">
+    <Connection Connector="ETH1" TargetModule="0AC808.9" TargetConnector="ETH1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="X20CP0484" TargetConnector="IF2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Parameter ID="Terminal" Value="true" />
+    <Parameter ID="Startmode" Value="1" />
+    <Parameter ID="ShowBootlogoVNC" Value="1" />
+    <Parameter ID="Mode" Value="Manual" />
+    <Parameter ID="InternetAddress" Value="192.168.0.222" />
+    <Parameter ID="Subnetmask" Value="255.255.255.0" />
+    <Parameter ID="Buttonusage" Value="1" />
+    <Parameter ID="ButtonOverride" Value="1" />
+    <Parameter ID="ButtonOverrideValue" Value="2147" />
+    <Parameter ID="SelectedFavoriteVNC" Value="192.168.0.100:5900" />
+    <Parameter ID="Favorites_VNC1" Value="192.168.0.100:5900" Description="Machine Display" />
+    <Parameter ID="Favorites_VNC2" Value="192.168.0.100:5901" Description="Safety Setup" />
+    <Parameter ID="PasswordVNC" Value="2147" />
+    <Parameter ID="PasswordCIFS" Value="" />
+    <Parameter ID="PasswordServiceEncrypt" Value="1" />
+    <Parameter ID="PasswordServiceEncrypted" Value="Sr1m/ubkTobKtMGmYG+OdX+pBVPXHNEV0toUjrnwIzvQUaZsN7HbgkMHcdX7NWbHkxunU2zcGZr9hHRCxdVEkcw0t0EkEZxQSM76MpE9s3WvBFtWwy/TiER4jA/5ccmygtG07vdCb9DlCJAeCcJdYe8VLadkZNOaNo2jGOliNnQ=" />
+    <Parameter ID="VncKeyMappingFile" Value="VC\6PPT30.101G-20B.dis" />
+  </Module>
+  <Module Name="8EAC0152.001-1" Type="8EAC0152.001-1" Version="2.2.0.1">
+    <Connection Connector="SS" TargetModule="8EI2X2HWT10.xxxx-1" TargetConnector="SS1" />
+    <Parameter ID="Ax1PMInterface" Value="Ax1PMEnDat" />
+  </Module>
+  <Module Name="8EI2X2HWT10.xxxx-1" Type="8EI2X2HWT10.xxxx-1" Version="2.2.0.1">
+    <Connection Connector="PLK2" TargetModule="X20CP0484" TargetConnector="IF3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Parameter ID="MotionTP" Value="Acp10Arnc0" />
+    <Parameter ID="EnableDNA" Value="on" />
+    <Parameter ID="EPL_DNA_Head" Value="0" />
+    <Parameter ID="EPL_DNA_HubPort" Value="1" />
+    <Parameter ID="EPL_DNA_InPort" Value="2" />
+    <Parameter ID="Ax1Interface" Value="Ax1EnDat" />
+    <Parameter ID="Ax2Interface" Value="Ax2EnDat" />
+    <Parameter ID="Ax3Interface" Value="Ax3EnDat" />
+  </Module>
+  <Module Name="NordsonMelter" Type="ModbusTcp_any" Version="1.0.6.0">
+    <Connection Connector="ETH1" TargetModule="0AC808.9" TargetConnector="ETH2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Parameter ID="IpAddress" Value="192.168.0.200" />
+    <Parameter ID="UnitId" Value="1" />
+  </Module>
+  <Module Name="Numatics_580" Type="FBE.NUMATICS-580-20150428-145500" Version="1.0" OrderNumber="Numatics 580">
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="PatLite_LightStack" Type="ModbusTcp_any" Version="1.0.6.0">
+    <Connection Connector="ETH1" TargetModule="0AC808.9" TargetConnector="ETH3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Parameter ID="IpAddress" Value="192.168.0.200" />
+  </Module>
+  <Module Name="X20BB52" Type="X20BB52" Version="1.1.0.0">
+    <Connector Name="IF6">
+      <Parameter ID="CycleTime" Value="2000" />
+    </Connector>
+  </Module>
+  <Module Name="X20BM11" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM11d" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11d" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM15" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM15" Type="X20BM15" Version="1.0.1.0">
+    <Connection Connector="X2X1" TargetModule="X20BB52" TargetConnector="IF6" NodeNumber="1" />
+  </Module>
+  <Module Name="X20BM36" Type="X20BM36" Version="1.0.0.6">
+    <Connection Connector="X2X1" TargetModule="X20BM11" TargetConnector="X2X2" NodeNumber="4" />
+  </Module>
+  <Module Name="X20CP0484" Type="X20CP0484" Version="1.2.1.0">
+    <Connection Connector="SL" TargetModule="X20BB52" TargetConnector="SL1" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.100" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Parameter ID="InaNodeNumber" Value="0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+      <Parameter ID="VncAuthentication1" Value="1" />
+      <Parameter ID="VncPasswordViewOnly1" Value="21472147" />
+      <Parameter ID="VncPasswordViewControl1" Value="2147" />
+      <Parameter ID="VncMaxConnections1" Value="4" />
+      <Parameter ID="VncRefreshRate1" Value="100" />
+      <Group ID="Vnc2" />
+      <Parameter ID="VncVcObjectName2" Value="Panel" />
+      <Parameter ID="VncKeyMappingFile2" Value="VC\PS2-Keyboard1.dis" />
+      <Parameter ID="VncAuthentication2" Value="1" />
+      <Parameter ID="VncPasswordViewOnly2" Value="21472147" />
+      <Parameter ID="VncPasswordViewControl2" Value="2147" />
+      <Parameter ID="VncPortNumber2" Value="5901" />
+      <Parameter ID="VncRefreshRate2" Value="100" />
+      <Parameter ID="ActivateModbus" Value="1" />
+      <Parameter ID="NumSlaves" Value="-1" />
+      <Parameter ID="NumAllBlocks" Value="-1" />
+      <Parameter ID="MemSizeIn" Value="-1" />
+      <Parameter ID="MemSizeOut" Value="-1" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="CycleTime" Value="4000" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="KeePakVFDCaseErector_C70_10Inch" />
+    <Parameter ID="UserPartitionSize" Value="100" />
+    <Parameter ID="PermanentPvSize" Value="1024" />
+    <Parameter ID="RemanentGlobalPvSize" Value="1024" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP0484.IF3" />
+    <Parameter ID="TaskClassIdleTime" Value="4000" />
+    <Parameter ID="Cyclic1Duration" Value="4000" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
+    <Parameter ID="Cyclic2Duration" Value="8000" />
+    <Parameter ID="Cyclic2Tolerance" Value="8000" />
+    <Parameter ID="Cyclic3Duration" Value="48000" />
+    <Parameter ID="Cyclic3Tolerance" Value="48000" />
+    <Parameter ID="Cyclic4Duration" Value="100000" />
+    <Parameter ID="Cyclic4Tolerance" Value="100000" />
+    <Parameter ID="Cyclic5Duration" Value="200000" />
+    <Parameter ID="Cyclic5Tolerance" Value="200000" />
+    <Parameter ID="Cyclic6Duration" Value="500000" />
+    <Parameter ID="Cyclic6Tolerance" Value="500000" />
+    <Parameter ID="Cyclic7Duration" Value="1000000" />
+    <Parameter ID="Cyclic7Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic8Duration" Value="4000" />
+    <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="recipes" />
+    <Parameter ID="FileDevicePath1" Value="F:\" />
+    <Parameter ID="EthernetDefaultGateway" Value="192.168.0.100" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="jeremy" />
+    <Parameter ID="FtpUserPassword1" Value="CB9xa/tRkdxv0VtZFfoX4sbyc2/nOLcpzFFiUfDmX6w=" />
+    <Parameter ID="FtpUserSalt1" Value="PVNzvqae" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+  </Module>
+  <Module Name="X20DI9371" Type="X20DI9371" Version="1.0.2.0">
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM15" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20DO8332" Type="X20DO8332" Version="1.0.2.0">
+    <Connection Connector="SS1" TargetModule="X20TB12e" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="PowerSupply01" Value="on" />
+  </Module>
+  <Module Name="X20DO9322" Type="X20DO9322" Version="1.0.3.0">
+    <Connection Connector="SS1" TargetModule="X20TB12d" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11d" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20PS9600" Type="X20PS9600" Version="1.0.1.0">
+    <Connection Connector="PS" TargetModule="X20BB52" TargetConnector="PS1" />
+    <Connection Connector="SS1" TargetModule="X20TB12f" TargetConnector="SS" />
+  </Module>
+  <Module Name="X20SLX806" Type="X20SLX806" Version="1.10.5.0">
+    <Connection Connector="SS1" TargetModule="X20TB52" TargetConnector="SS" />
+    <Connection Connector="SS2" TargetModule="X20TB52a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM36" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="SafeProject" Value="SafeLOGIC-1" />
+    <Parameter ID="SafeDesigner" Value="4.2.6.2" />
+    <Parameter ID="DigitalOutput01" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput02" Value="viaSafeLOGIC" />
+    <Parameter ID="DigitalOutput03" Value="viaSafeLOGIC" />
+    <Parameter ID="UnsafeInputUINTs" Value="4" />
+  </Module>
+  <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12d" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12e" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12f" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB52" Type="X20TB52" Version="1.0.0.1" />
+  <Module Name="X20TB52a" Type="X20TB52" Version="1.0.0.1" />
+</Hardware>

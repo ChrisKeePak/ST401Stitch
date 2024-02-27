@@ -1,0 +1,6 @@
+VAR
+	num : UDINT;
+	EncoderPos : UDINT;
+	BitPackedGrayCode : UDINT;
+	i : UINT;
+END_VAR

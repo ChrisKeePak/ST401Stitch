@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="mpRamAxis" Type="mpaxisbasic">
+    <Selector ID="AxisConfiguration" Value="AxisWithConfiguration">
+      <Group ID="Axis">
+        <Group ID="MovementLimits">
+          <Property ID="VelocityPositive" Value="150" />
+          <Property ID="VelocityNegative" Value="150" />
+          <Property ID="Acceleration" Value="1500" />
+          <Property ID="Deceleration" Value="1500" />
+        </Group>
+      </Group>
+      <Group ID="Drive">
+        <Group ID="Controller">
+          <Group ID="Position">
+            <Property ID="ProportionalGain" Value="20" />
+          </Group>
+          <Group ID="Speed">
+            <Property ID="ProportionalGain" Value="0.05" />
+          </Group>
+          <Group ID="LoopFilters">
+            <Selector ID="[0]" />
+            <Selector ID="[1]" />
+            <Selector ID="[2]" />
+          </Group>
+        </Group>
+      </Group>
+    </Selector>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+</Configuration>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.6.1.182?>
+<Package SubType="mapp" PackageType="mapp" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">RcpCfg.mprecipexml</Object>
+    <Object Type="File">AlrmHstCfg.mpalarmxhistory</Object>
+    <Object Type="File">AlarmCfg.mpalarmxcore</Object>
+    <Object Type="File">ServoRam.mpaxisbasic</Object>
+    <Object Type="File">ServoFeed.mpaxisbasic</Object>
+    <Object Type="File">ServoHop.mpaxisbasic</Object>
+  </Objects>
+</Package>

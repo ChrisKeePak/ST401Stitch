@@ -1,0 +1,23 @@
+<!--xml version= "1.0" encoding="utf-8"-->
+<!--IOMapping Version="4.0"-->
+<IOOffsets SIBytes="2048" SOBytes="2048" NSIBytes="1024" NSOBytes="1024" ConnectionsValidOffset="24" EMOsOffset="60" EMOsSize="8" >
+		<Module Name="SL1.SM1" Hardware="X20SLX806" SafeLogicID="1" SafeModuleID="1" SISize="8" SOSize="2" NSISize="20" NSOSize="20" SIOffset="16" SOOffset="12" NSIOffset="0" NSOOffset="0" HWTypeCode="63" >
+			<Channel Name="SafeTwoChannelInput0102" Mapping="SIX17.0" Variable="FrontEstopInput" SODIndex="0x9999" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0304" Mapping="SIX17.1" Variable="BackEstopInput" SODIndex="0x9999" SODSubIndex="0x2" />
+			<Channel Name="SafeTwoChannelInput0506" Mapping="SIX17.2" Variable="GuardDoorInput" SODIndex="0x9999" SODSubIndex="0x2" />
+			<Channel Name="SafeDigitalOutput01" Mapping="SQX12.0" Variable="VFD_STO" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="SafeDigitalOutput03" Mapping="SQX12.2" Variable="VFD_STO2" SODIndex="0x9999" SODSubIndex="0x4" />
+			<Channel Name="ReleaseOutput01" Mapping="NSQX10.0" Variable="Release_VFD_STO" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ReleaseOutput03" Mapping="NSQX10.2" Variable="Release_VFD_STO2" SODIndex="0x9999" SODSubIndex="0x7" />
+			<Channel Name="ExternalMachineOption000" Mapping="SIX60.0" Variable="ExternalMachineOption000" />
+			<Channel Name="BOOL001" Mapping="NSQX0.0" Variable="SafetyOK" Address="Cyclic#1.::gIO.DIs.SafetyOK" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL002" Mapping="NSQX0.1" Variable="SafetyRunning" Address="Cyclic#1.::gIO.SafetyStatus.SafetyProgramRunning" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL003" Mapping="NSQX0.2" Variable="GuardDoorsStatus" Address="Cyclic#1.::gIO.SafetyStatus.GuardDoorsOK" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL004" Mapping="NSQX0.3" Variable="CabinetEstopStatus" Address="Cyclic#1.::gIO.SafetyStatus.FrontEStopOK" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="BOOL005" Mapping="NSQX0.4" Variable="BackEstopStatus" Address="Cyclic#1.::gIO.SafetyStatus.BackEstopOK" SODIndex="0x2580" SODSubIndex="0x1" />
+			<Channel Name="UINT001" Mapping="NSQW2" Variable="CabinetEstopDiag" Address="Cyclic#1.::gIO.SafetyStatus.CabinetEStopStatus" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="UINT002" Mapping="NSQW4" Variable="BackEstopDiag" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="UINT003" Mapping="NSQW6" Variable="GuardDoorsDiag" SODIndex="0x2580" SODSubIndex="0x2" />
+			<Channel Name="BOOL101" Mapping="NSIX0.0" Variable="safetyReset" Address="Cyclic#1.::gIO.DOs.ResetSafety" SODIndex="0x2500" SODSubIndex="0x2" />
+		</Module>
+</IOOffsets>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.6.3.55 SP?>
+<AcoposParameterTable>
+  <Root Name="Parameters">
+    <Parameter Name="PCTRL_S_ACT_PARID" ID="230" Value="PCTRL_S_SET" Description="CTRL Position controller: Actual encoder position parameter ID" />
+  </Root>
+</AcoposParameterTable>

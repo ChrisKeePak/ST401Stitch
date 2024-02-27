@@ -1,0 +1,81 @@
+VAR
+	AirPressureAlarmActive : BOOL;
+	AirPressureNotOK : BOOL;
+	AirPressureNotOKTimer : TON;
+	BlowOff_Pulse : TP;
+	BlowOff_Trigger : BOOL;
+	BodyCheckError : BOOL;
+	BodyCheckErrorActive : BOOL;
+	BodyPanelTimeout : TON;
+	BoxPickTMR : TON;
+	CountReset : BOOL;
+	DistanceFromStopPosition : REAL;
+	DownstreamBlocked : BOOL;
+	DownstreamSensorONTimer : TON;
+	DownstreamSensorTimer : TON;
+	Dummy : BOOL;
+	DwellTimer : TON;
+	EuchnerSafeResetTimer : TON;
+	FeedPosFinal : LREAL;
+	FeedPositionCapture : LREAL;
+	FeedServoPosSP : LREAL;
+	FeedServoTimeout : BOOL;
+	FeedServoTMR : TON;
+	FeedStopTimer : TON;
+	ForceBodyPanellError : BOOL;
+	FrontEStopNotOKActive : BOOL;
+	VaccumStopTimer : TON;
+END_VAR
+VAR CONSTANT
+	Ftrig_BlowOffOnManual : F_TRIG := (0); (*Falling edge detection function block for this variable*)
+END_VAR
+VAR
+	Ftrig_DownstreamBlocked : F_TRIG;
+	GluePhotoEyeAlarmActive : BOOL;
+	GuardDoorNotOKActive : BOOL;
+	HopperLowAlarm : BOOL;
+	InBlissSidePanelCheckWindow : BOOL;
+	LubeReset : BOOL;
+	LubricationCounter : CTU;
+	MoveVelocityRequest : BOOL;
+	OldEncoderPos : REAL;
+	PhotoEyeCheckErrorActive : BOOL;
+	PhotoEyeTimeout : TON;
+	PickAndPlaceDwelling : BOOL;
+	PickAndPlaceDwellTimer : TON;
+	PickAndPlaceHasBox : BOOL;
+	PickDwellTime : TIME;
+	RamAtStopPosition : BOOL;
+	RamCycleCount : UDINT;
+	RearEStopNotOKActive : BOOL;
+	Return_Trigger : BOOL;
+	Rtrig_AlarmActive : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_BlowOffManual : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_BlowOffTrigger : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_DownstreamBlocked : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_FeedServoTMR : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_HopperLow : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_InfeedBoxPresent : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_LubricationCounter : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_PhotoEyeSeen : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_RequestStop : R_TRIG; (*Rising edge detection function block for this variable*)
+	Rtrig_RequestVFDRun : R_TRIG;
+	SafetyNotOKActive : BOOL;
+	SafetyResetRequestTimer : TON;
+	ShowModeTimer : TON;
+	SideCheckError : BOOL;
+	SideCheckErrorActive : BOOL;
+	state : State_enum;
+	status : UDINT;
+	StopFeedServo : BOOL;
+	StopPositionDwellExpire : BOOL;
+	StopTriggerByDownstream : BOOL;
+	TON_BlowOff : TON; (*Timer for blow off after vacuum is shut off (user defined time)*)
+	TON_RamDelay : TON; (*Timer for the Ram to delay forward motion*)
+	VacuumOffTime : TIME;
+	VacuumTimer : TON;
+	Vacuum_ON : BOOL;
+	Y_Delay : TON;
+	Y_Down_Pulse : TP;
+	Y_Trigger : BOOL;
+END_VAR

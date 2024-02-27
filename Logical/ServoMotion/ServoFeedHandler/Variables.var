@@ -1,0 +1,8 @@
+VAR
+	HopperLowStop : BOOL;
+	state : ServoFeedState_enum;
+	FeedStopTimer : TON;
+END_VAR
+VAR RETAIN
+	CycleCount : UDINT;
+END_VAR

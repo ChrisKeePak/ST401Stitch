@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.7.2.98"?>
+<Project xmlns="http://br-automation.co.at/AS/VC/Project">
+  <Property Name="EnableEvents" Value="True"/>
+  <Property Name="SharedTargetResourceRoot" Value=""/>
+  <Property Name="TextIDMax" Value="213438"/>
+  <SourceFiles>
+    <Source File="Languages.vcr"/>
+    <Source File="TextGroups\AlarmAcknowledgeState.txtgrp"/>
+    <Source File="TextGroups\AlarmBypassState.txtgrp"/>
+    <Source File="TextGroups\AlarmEvent.txtgrp"/>
+    <Source File="TextGroups\AlarmState.txtgrp"/>
+    <Source File="TextGroups\DateTimeFormats.txtgrp"/>
+    <Source File="TextGroups\httpURL_SDM.txtgrp"/>
+    <Source File="TextGroups\Users.txtgrp"/>
+    <Source File="UnitGroups\Length.vcug"/>
+    <Source File="UnitGroups\Mass.vcug"/>
+    <Source File="UnitGroups\Volume.vcug"/>
+    <Source File="UnitGroups\Power.vcug"/>
+    <Source File="UnitGroups\Memory.vcug"/>
+    <Source File="UnitGroups\Pressure.vcug"/>
+    <Source File="UnitGroups\Temperatures.vcug"/>
+    <Source File="UnitGroups\Energy.vcug"/>
+    <Source File="UnitGroups\ppm.vcug"/>
+    <Source File="UnitGroups\degree.vcug"/>
+    <Source File="UnitGroups\Time.vcug"/>
+    <Source File="UnitGroups\degreePerSec.vcug"/>
+    <Source File="UnitGroups\RPM.vcug"/>
+    <Source File="UnitGroups\Amps.vcug"/>
+    <Source File="UnitGroups\SpeedPropAmplification.vcug"/>
+    <Source File="UnitGroups\PositionPropAmplification.vcug"/>
+    <Source File="UnitGroups\Velocity.vcug"/>
+    <Source File="UnitGroups\Acceleration.vcug"/>
+    <Source File="UnitGroups\Speed_mm_s.vcug"/>
+    <Source File="UnitGroups\accel_mm_ss.vcug"/>
+    <Source File="UnitGroups\Position_mm.vcug"/>
+    <Source File="UnitGroups\Torque.vcug"/>
+    <Source File="UnitGroups\degreeAccel.vcug"/>
+    <Source File="UnitGroups\Percent.vcug"/>
+    <Source File="AlarmGroups\AlarmSystem.alcfg"/>
+    <Source File="AlarmGroups\SystemAlarms.algrp"/>
+    <Source File="DataSources\Internal.dso"/>
+    <Source File="DataSources\DataSource.dso"/>
+    <Source File="ControlVersion.cvinfo"/>
+  </SourceFiles>
+</Project>

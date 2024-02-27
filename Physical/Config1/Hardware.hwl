@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <TimeStamps>
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="05/26/2021 14:45:33" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="X20BB67" Type="X20BB67" X="85" Y="85" />
+    <Module Name="X20PS9600" Type="X20PS9600" X="135" Y="85" />
+    <Module Name="X20TB12" Type="X20TB12" X="135" Y="112" />
+    <Module Name="X20CP0484" Type="X20CP0484" X="110" Y="85" />
+    <Module Name="Anybus_CompactCom_40_Ethernet_POWERLINK" Type="FBE.0000001B_Nord_PwrLnk_0413_FLEX_with_HMS_names" X="399" Y="243" />
+    <Module Name="ModbusTcp_any" Type="ModbusTcp_any" X="148" Y="343" />
+  </Modules>
+  <Links>
+    <Link From="Anybus_CompactCom_40_Ethernet_POWERLINK" To="X20CP0484" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="432" Y="287.5" />
+      <Point X="432" Y="287.5" />
+      <Point X="432" Y="294.5" />
+      <Point X="432" Y="305" />
+      <Point X="115.75" Y="305" />
+      <Point X="115.75" Y="186" />
+      <Point X="115.75" Y="158" />
+      <Point X="124" Y="158" />
+    </Link>
+    <Link From="ModbusTcp_any" To="X20CP0484" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
+      <Point X="182" Y="387" />
+      <Point X="182" Y="387" />
+      <Point X="182" Y="394" />
+      <Point X="182" Y="405" />
+      <Point X="124" Y="405" />
+      <Point X="124" Y="185" />
+      <Point X="124" Y="175" />
+      <Point X="124" Y="175" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

@@ -1,0 +1,3 @@
+VAR
+	SaveButton_RTrig : R_TRIG;
+END_VAR

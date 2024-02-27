@@ -1,0 +1,11 @@
+VAR
+	Valve0OnBliss : BOOL;
+	Valve2OnBliss : BOOL;
+	Valve4OnBliss : BOOL;
+	Valve6OnBliss : BOOL;
+	Valve0OnNotBliss : BOOL;
+	Valve2OnNotBliss : BOOL;
+	Valve4OnNotBliss : BOOL;
+	Valve6OnNotBliss : BOOL;
+	DataSource : REAL;
+END_VAR

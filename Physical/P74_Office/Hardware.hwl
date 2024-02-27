@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <Modules>
+    <Module Name="X20BM01" Type="X20BM01" X="137" Y="276" />
+    <Module Name="X20BR9300" Type="X20BR9300" X="137" Y="276" />
+    <Module Name="X20TB12" Type="X20TB12" X="137" Y="303" />
+    <Module Name="X20BM11c" Type="X20BM11" X="150" Y="276" />
+    <Module Name="X20DI9371" Type="X20DI9371" X="150" Y="276" />
+    <Module Name="X20TB12g" Type="X20TB12" X="150" Y="303" />
+    <Module Name="X20BM11d" Type="X20BM11" X="163" Y="276" />
+    <Module Name="X20DI9371a" Type="X20DI9371" X="163" Y="276" />
+    <Module Name="X20TB12h" Type="X20TB12" X="163" Y="303" />
+    <Module Name="X20BM11e" Type="X20BM11" X="176" Y="276" />
+    <Module Name="X20DO9322" Type="X20DO9322" X="176" Y="276" />
+    <Module Name="X20TB12a" Type="X20TB12" X="176" Y="303" />
+    <Module Name="X20BM11f" Type="X20BM11" X="189" Y="276" />
+    <Module Name="X20DO9322a" Type="X20DO9322" X="189" Y="276" />
+    <Module Name="X20TB12b" Type="X20TB12" X="189" Y="303" />
+    <Module Name="X20BM11" Type="X20BM11" X="202" Y="276" />
+    <Module Name="X20DO8332" Type="X20DO8332" X="202" Y="276" />
+    <Module Name="X20TB12e" Type="X20TB12" X="202" Y="303" />
+    <Module Name="X20cBM11" Type="X20cBM11" X="215" Y="276" />
+    <Module Name="X20DIF371a" Type="X20DIF371" X="215" Y="276" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="215" Y="303" />
+    <Module Name="Numatics_580" Type="FBE.NUMATICS-580-20150428-145500" X="137" Y="458" />
+    <Module Name="8I74xxxxxxx.01P-1" Type="8I74xxxxxxx.01P-1" X="359" Y="240" />
+    <Module Name="X20BM33" Type="X20BM33" X="300" Y="100" />
+    <Module Name="X20SLX842" Type="X20SLX842" X="300" Y="100" />
+    <Module Name="X20TB52a" Type="X20TB52" X="313" Y="126" />
+    <Module Name="X20TB52" Type="X20TB52" X="300" Y="126" />
+    <Module Name="X20BM33a" Type="X20BM33" X="326" Y="100" />
+    <Module Name="X20SO6300" Type="X20SO6300" X="326" Y="100" />
+    <Module Name="X20TB52b" Type="X20TB52" X="339" Y="126" />
+    <Module Name="X20CP3585" Type="X20CP3585" X="100" Y="100" />
+  </Modules>
+  <Links>
+    <Link From="8I74xxxxxxx.01P-1" To="X20CP3585" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="373" Y="394" />
+      <Point X="373" Y="394" />
+      <Point X="373" Y="441" />
+      <Point X="373" Y="455" />
+      <Point X="345" Y="455" />
+      <Point X="345" Y="265" />
+      <Point X="156" Y="265" />
+      <Point X="156" Y="200" />
+      <Point X="156" Y="187" />
+      <Point X="156" Y="187" />
+    </Link>
+    <Link From="8I74xxxxxxx.01P-1" To="Numatics_580" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="383" Y="394" />
+      <Point X="383" Y="394" />
+      <Point X="383" Y="441" />
+      <Point X="383" Y="515" />
+      <Point X="170" Y="515" />
+      <Point X="170" Y="504" />
+      <Point X="170" Y="497" />
+      <Point X="170" Y="497" />
+    </Link>
+  </Links>
+  <InfoElements>
+    <InfoElementText Id="Textbox_1" X="239" Y="481.5" Width="186" Height="22">
+      <Text Color="Black" FontName="Arial" FontSize="12" FontStyle="Regular" AlignmentHorizontal="Left">Pneumatics 580</Text>
+      <Background Color="White" Transparent="False" />
+      <Border Color="Black" Transparent="False" DashStyle="Solid" Width="1" />
+    </InfoElementText>
+  </InfoElements>
+</BR.AS.HardwareTopology>

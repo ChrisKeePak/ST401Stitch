@@ -1,0 +1,112 @@
+(*
+T: RESOURCE CPU
+FW: NO
+CI#: 0
+QSL: 17
+QVE: 17
+QVPC: 17
+QPar: 0
+QFBI: 0
+*)
+@V 1 2 0
+safetyReset	1	VAR_GLOBAL	@TYP:1
+%NSIX 0.0		     
+
+;
+
+@V 1 3 0
+CabinetEstopDiag	2	VAR_GLOBAL	@TYP:18
+%NSQW 2		     
+
+;
+
+@V 1 4 0
+SafetyOK	3	VAR_GLOBAL	@TYP:1
+%NSQX 0.0		     
+
+;
+
+@V 1 5 0
+SafetyRunning	4	VAR_GLOBAL	@TYP:1
+%NSQX 0.1		     
+
+;
+
+@V 1 6 0
+GuardDoorsStatus	5	VAR_GLOBAL	@TYP:1
+%NSQX 0.2		     
+
+;
+
+@V 1 7 0
+CabinetEstopStatus	6	VAR_GLOBAL	@TYP:1
+%NSQX 0.3		     
+
+;
+
+@V 1 8 0
+BackEstopStatus	7	VAR_GLOBAL	@TYP:1
+%NSQX 0.4		     
+
+;
+
+@V 1 9 0
+GuardDoorsDiag	8	VAR_GLOBAL	@TYP:18
+%NSQW 6		     
+
+;
+
+@V 1 10 0
+BackEstopDiag	9	VAR_GLOBAL	@TYP:18
+%NSQW 4		     
+
+;
+
+@V 1 11 0
+FrontEstopInput	10	VAR_GLOBAL	@TYP:43
+%SIX 17.0		     
+
+;
+
+@V 1 12 0
+BackEstopInput	11	VAR_GLOBAL	@TYP:43
+%SIX 17.1		     
+
+;
+
+@V 1 13 0
+GuardDoorInput	12	VAR_GLOBAL	@TYP:43
+%SIX 17.2		     
+
+;
+
+@V 1 14 0
+VFD_STO	13	VAR_GLOBAL	@TYP:43
+%SQX 12.0		     
+
+;
+
+@V 1 15 0
+VFD_STO2	14	VAR_GLOBAL	@TYP:43
+%SQX 12.2		     
+
+;
+
+@V 1 16 0
+Release_VFD_STO	15	VAR_GLOBAL	@TYP:1
+%NSQX 10.0		     
+
+;
+
+@V 1 17 0
+Release_VFD_STO2	16	VAR_GLOBAL	@TYP:1
+%NSQX 10.2		     
+
+;
+
+@V 1 18 0
+ExternalMachineOption000	17	VAR_GLOBAL	@TYP:43
+%SIX 60.0		     
+
+;
+

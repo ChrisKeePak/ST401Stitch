@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.2.98?>
+<Package Version="1.00.0" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Global data types">Global.typ</Object>
+    <Object Type="File" Description="Global variables">Global.var</Object>
+    <Object Type="Package" Description="Global libraries">Libraries</Object>
+    <Object Type="Package">Simulation</Object>
+    <Object Type="Package">ModeControl</Object>
+    <Object Type="Package">Actuators</Object>
+    <Object Type="Package">Recipes</Object>
+    <Object Type="Package">AlarmControl</Object>
+    <Object Type="Package">HMI</Object>
+    <Object Type="File">Project.language</Object>
+    <Object Type="File">AlarmTexts.tmx</Object>
+    <Object Type="Program" Language="IEC">ncsdcctrl</Object>
+    <Object Type="Package" Description="gAxis01obj">gAxis01obj</Object>
+    <Object Type="Program" Language="ANSIC">EncoderDecoding</Object>
+    <Object Type="Package">Stacklight</Object>
+    <Object Type="Package" Description="AsSafety design sample">AsSafetySolution</Object>
+    <Object Type="Package" Description="gServoRamobj">ServoMotion</Object>
+    <Object Type="Package">Upgrades</Object>
+    <Object Type="Package" Description="gFeedobj">gFeedobj</Object>
+    <Object Type="Program" Language="IEC">Program</Object>
+  </Objects>
+</Package>

@@ -1,0 +1,6 @@
+VAR
+	ServoHopper : AxisBasic;
+	ServoFeed : AxisBasic;
+	ServoRam : AxisBasic;
+	ServoOverride : REAL := 1.0;
+END_VAR

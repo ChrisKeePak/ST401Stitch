@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core">
+      <Group ID="Mapping">
+        <Group ID="[0]">
+          <Property ID="Alarm" Value="Adhesive*" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="AdhesiveAlarm" />
+          </Selector>
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Alarm" Value="Vacuum*" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="VacuumAlarm" />
+          </Selector>
+        </Group>
+        <Group ID="[2]">
+          <Property ID="Alarm" Value="Air*" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="AirAlarm" />
+          </Selector>
+        </Group>
+        <Group ID="[3]">
+          <Property ID="Alarm" Value="Safety*" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="SafetyAlarm" />
+          </Selector>
+        </Group>
+        <Group ID="[4]">
+          <Property ID="Alarm" Value="Bliss*" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="BlissPanelAlarm" />
+          </Selector>
+        </Group>
+      </Group>
+      <Group ID="BySeverity">
+        <Group ID="[0]">
+          <Property ID="Severity" Value="110" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="HighSeverityAlarmActive" />
+          </Selector>
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Severity" Value="1" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="LowSeverityAlarmActive" />
+          </Selector>
+        </Group>
+      </Group>
+    </Group>
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="VacuumPressureLow" />
+        <Property ID="Message" Value="{$AlarmTexts/VacuumPressureLow}" />
+        <Property ID="Code" Value="1" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="VacuumOverTemp" />
+        <Property ID="Message" Value="{$AlarmTexts/VacuumOverTemp}" />
+        <Property ID="Code" Value="1" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="AdhesiveUnitNotReady" />
+        <Property ID="Message" Value="{$AlarmTexts/AdhesiveUnitNotReady}" />
+        <Property ID="Code" Value="2" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Property ID="Acknowledge" Value="0" />
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::AdhesiveCo:AdhesiveUnitFaultedAlarmActive" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="TRUE" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="AdhesiveUnitFault" />
+        <Property ID="Message" Value="{$AlarmTexts/AdhesiveUnitFault}" />
+        <Property ID="Code" Value="3" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[4]">
+        <Property ID="Name" Value="AdhesiveUnitLevelLow" />
+        <Property ID="Message" Value="{$AlarmTexts/AdhesiveUnitLevelLow}" />
+        <Property ID="Code" Value="4" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[5]">
+        <Property ID="Name" Value="AdhesiveUseageLow" />
+        <Property ID="Message" Value="{$AlarmTexts/AdhesiveUseageLow}" />
+        <Property ID="Code" Value="5" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[6]">
+        <Property ID="Name" Value="AirPressureLow" />
+        <Property ID="Message" Value="{$AlarmTexts/AirPressureLow}" />
+        <Property ID="Code" Value="6" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[7]">
+        <Property ID="Name" Value="SafetyNotOK" />
+        <Property ID="Message" Value="{$AlarmTexts/SafetyNotOK}" />
+        <Property ID="Code" Value="7" />
+        <Property ID="Severity" Value="110" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[8]">
+        <Property ID="Name" Value="SafetyFrontEStop" />
+        <Property ID="Message" Value="{$AlarmTexts/SafetyFrontEStop}" />
+        <Property ID="Code" Value="7" />
+        <Property ID="Severity" Value="110" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[9]">
+        <Property ID="Name" Value="SafetyBackEStop" />
+        <Property ID="Message" Value="{$AlarmTexts/SafetyBackEStop}" />
+        <Property ID="Code" Value="7" />
+        <Property ID="Severity" Value="110" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[10]">
+        <Property ID="Name" Value="SafetyGuardDoor" />
+        <Property ID="Message" Value="{$AlarmTexts/SafetyGuardDoor}" />
+        <Property ID="Code" Value="7" />
+        <Property ID="Severity" Value="110" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[11]">
+        <Property ID="Name" Value="VFDAlarm" />
+        <Property ID="Message" Value="{$AlarmTexts/VFDAlarm}" />
+        <Property ID="Code" Value="8" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[12]">
+        <Property ID="Name" Value="IOModuleNotOK" />
+        <Property ID="Message" Value="{$AlarmTexts/IOModuleNotOK}" />
+        <Property ID="Code" Value="9" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[13]">
+        <Property ID="Name" Value="VFDOverCurrent" />
+        <Property ID="Message" Value="{$AlarmTexts/VFDOverCurrent}" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+        </Selector>
+      </Group>
+      <Group ID="[14]">
+        <Property ID="Name" Value="VenturiLow" />
+        <Property ID="Message" Value="{$AlarmTexts/VenturiLow}" />
+        <Property ID="Code" Value="1" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[15]">
+        <Property ID="Name" Value="NordsonComms" />
+        <Property ID="Message" Value="{$AlarmTexts/NordsonComms}" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[16]">
+        <Property ID="Name" Value="PatLiteComms" />
+        <Property ID="Message" Value="{$AlarmTexts/PatLiteComms}" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[17]">
+        <Property ID="Name" Value="AxisNotHomed" />
+        <Property ID="Message" Value="{$AlarmTexts/AxisNotHomed}" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[18]">
+        <Property ID="Name" Value="ATSUnderLimit" />
+        <Property ID="Message" Value="{$AlarmTexts/ATSUnderLimit}" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[19]">
+        <Property ID="Name" Value="ATSOverLimit" />
+        <Property ID="Message" Value="{$AlarmTexts/ATSOverLimit}" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[20]">
+        <Property ID="Name" Value="AdhesiveNordsonInStandby" />
+        <Property ID="Message" Value="{$AlarmTexts/AdhesiveNordsonInStandby}" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[21]">
+        <Property ID="Name" Value="PhotoEyeCheck" />
+        <Property ID="Message" Value="{$AlarmTexts/PhotoEyeCheck}" />
+        <Property ID="Severity" Value="110" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[22]">
+        <Property ID="Name" Value="BodyPanelCheck" />
+        <Property ID="Message" Value="{$AlarmTexts/BodyPanelCheck}" />
+        <Property ID="Severity" Value="110" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::ModeContro:BodyCheckError" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="TRUE" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[23]">
+        <Property ID="Name" Value="HopperLow" />
+        <Property ID="Message" Value="{$AlarmTexts/HopperLow}" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Property ID="Acknowledge" Value="0" />
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::ModeContro:HopperLowAlarm" />
+            <Property ID="InhibitPV" Value="TRUE" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="TRUE" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+    </Group>
+    <Group ID="mapp.AlarmX.Core.Snippets">
+      <Group ID="[0]">
+        <Property ID="Key" Value="VFDAlarmText" />
+        <Selector ID="Value">
+          <Property ID="PV" Value="::gRamCtrlInterface.Status.VFDAlarmText" />
+        </Selector>
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Key" Value="IOAlarmText" />
+        <Selector ID="Value">
+          <Property ID="PV" Value="::AlarmHandl:IOAlarmText" />
+        </Selector>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

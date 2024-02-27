@@ -1,0 +1,34 @@
+(*
+T: PROGRAM Main
+FW: NO
+CI#: 80
+QSL: 4
+QVE: 4
+QVPC: 4
+QPar: 0
+QFBI: 3
+*)
+@V 1 2 0
+CabinetEstopOK	1	VAR	@TYP:43
+		     
+
+;
+
+@V 1 3 0
+CabinetEStop	2	VAR	@FB:81
+		     
+
+;
+
+@V 1 4 0
+ReleaseTimer	3	VAR	@FB:44
+		     
+
+;
+
+@V 1 5 0
+STO_Delay	4	VAR	@FB:43
+		     
+
+;
+

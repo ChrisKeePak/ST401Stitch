@@ -1,0 +1,5 @@
+VAR
+	StartDwellTimer : TON;
+	EndDwellTimer : TON;
+	state : ServoRamState_enum;
+END_VAR

@@ -1,0 +1,12 @@
+VAR
+	ResetTimeoutAlarm : BOOL;
+	StartDwellTimer : TON;
+	AtTorqueTimer : TON;
+	state : ServoHopperState_enum;
+END_VAR
+VAR RETAIN
+	CycleCount : UDINT;
+END_VAR
+VAR
+	ResetTimeoutTimer : TON;
+END_VAR
