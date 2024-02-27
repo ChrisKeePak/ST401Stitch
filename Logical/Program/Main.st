@@ -15,7 +15,7 @@ PROGRAM _CYCLIC
 		IN_mb_station := mb_Station,
 		Melter := Melter);
 	Melter.b_r_LostCommunication := NOT b_ModuleStatus;
-	
+	//adding a new comment to test git
 END_PROGRAM
 
 PROGRAM _EXIT
